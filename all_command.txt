@@ -1,0 +1,21 @@
+D:\practice\pip_library\First_project\imgzip>doskey /history
+cd imgzip
+python3 -m unittest discover tests/
+py -m unittest discover tests/
+pip install -r requirements.txt
+py -m pip install -r requirements.txt
+py -m pip install --default-timeout=1000 Pillow
+py -m unittest discover tests/
+pip install build twine
+py -m pip install build twine
+py -m build
+twine upload dist/*
+py -m twine upload dist/*
+py -m pip install --upgrade twine urllib3
+py -m twine upload dist/*
+pip install imgzip
+py -m pip install imgzip
+history
+doskey /history
+
+D:\practice\pip_library\First_project\imgzip>
