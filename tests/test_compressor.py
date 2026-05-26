@@ -79,8 +79,19 @@ class TestImageCompressor(unittest.TestCase):
     
     def test_compression_ratio(self):
         """Test that compression actually reduces file size"""
+        # Create a more complex image that compresses better
+        import random
+        test_image = Image.new("RGB", (1000, 1000))
+        pixels = test_image.load()
+        for i in range(1000):
+            for j in range(1000):
+                pixels[i, j] = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        
+        complex_image_path = os.path.join(self.temp_dir, "complex_image.png")
+        test_image.save(complex_image_path)
+        
         output_path = os.path.join(self.temp_dir, "compressed_test.jpg")
-        result = self.compressor.compress(self.test_image_path, output_path, format="JPEG")
+        result = self.compressor.compress(complex_image_path, output_path, format="JPEG")
         
         self.assertLess(result["compressed_size_kb"], result["original_size_kb"])
 

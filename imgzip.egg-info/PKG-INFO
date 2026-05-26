@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: imgzip
+Version: 0.1.0
+Summary: A lightweight Python library for compressing images with ease
+Home-page: https://github.com/RKSAHOO4414/imgzip
+Author: RKSAHOO4414
+Author-email: your_email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow>=9.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# imgzip
+
+A lightweight Python library for compressing images with ease.
+
+## Features
+
+- ✅ Simple and intuitive API
+- ✅ Support for JPG, PNG, BMP, GIF formats
+- ✅ Batch compression for multiple images
+- ✅ Customizable compression quality
+- ✅ Optional image resizing
+- ✅ Automatic format conversion
+- ✅ Detailed compression statistics
+
+## Installation
+
+Install `imgzip` from PyPI:
+
+```bash
+pip install imgzip
